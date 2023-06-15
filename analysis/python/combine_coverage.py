@@ -49,7 +49,10 @@ if __name__ == "__main__":
                 with open(filepath, "r", encoding='utf-8') as file:
                     handle_csv(project, file, writer)
 
-            glob_result[2] = round(glob_result[1] / glob_result[0] * 100, 2)
+            if glob_result[0] != 0:
+                glob_result[2] = round(glob_result[1] / glob_result[0] * 100, 2)
+            else:
+                glob_result[2] = 0
 
             writer.writerow([])
             writer.writerow(["TOTAL"] + glob_result)
