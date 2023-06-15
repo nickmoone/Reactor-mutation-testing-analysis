@@ -41,10 +41,7 @@ if __name__ == "__main__":
         with open(csv_path, "w") as csv_file:
             writer = csv.writer(csv_file)
 
-            writer.writerow(["project", 
-                            "mutations",
-                            "killed",
-                            "% killed"])
+            writer.writerow(["project", "mutations", "killed", "% killed"])
             for project, filepath in get_files(root):
                 with open(filepath, "r", encoding='utf-8') as file:
                     handle_csv(project, file, writer)
