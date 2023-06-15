@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
             writer.writerow(row)
     else:
-        exit("Usage: python compareCoverage.py <root> <csvpath>")
+        exit("Usage: python coverage.py <root> <csvpath>")
 
     
 

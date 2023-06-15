@@ -11,6 +11,6 @@ for dir in $2/*; do
     echo $dir
     # Check if folder is a git repository.
     if [ -d "$dir/.git" ]; then
-        python3 $1/collect_results.py $dir $3
+        python3 $1/collect.py $dir $3/results
     fi
 done

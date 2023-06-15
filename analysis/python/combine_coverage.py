@@ -54,4 +54,4 @@ if __name__ == "__main__":
             writer.writerow([])
             writer.writerow(["TOTAL"] + glob_result)
     else:
-        exit("Usage: python countMethods.py <results_path> <csv_path>")
+        exit("Usage: python combine_coverage.py <results_path> <csv_path>")

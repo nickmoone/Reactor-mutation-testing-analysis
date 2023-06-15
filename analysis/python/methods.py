@@ -142,4 +142,4 @@ if __name__ == "__main__":
         # prettyprint("Global", glob_result)
         write_csv(csv_path, glob_result)
     else:
-        exit("Usage: python countMethods.py <reactive_root> <csv_path>")
+        exit("Usage: python methods.py <reactive_root> <csv_path>")

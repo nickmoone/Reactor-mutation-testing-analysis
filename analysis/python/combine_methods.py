@@ -66,4 +66,4 @@ if __name__ == "__main__":
 
         write_csv(csv_path, glob_result)
     else:
-        exit("Usage: python countMethods.py <results_path> <csv_path>")
+        exit("Usage: python combine_methods.py <results_path> <csv_path>")

@@ -68,5 +68,5 @@ if __name__ == "__main__":
         result_dest = sys.argv[2]
         filepaths = iterate_files(project_root, result_dest)
     else:
-        exit("Usage: python collectHTML.py <project_root> <result_dest>")
+        exit("Usage: python collect.py <project_root> <result_dest>")
 

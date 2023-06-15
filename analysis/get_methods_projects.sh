@@ -9,7 +9,7 @@ fi
 # Loop over each sub folder in projects folder.
 for dir in $2/*; do
     echo $dir
-    python3 $1/count_methods.py $dir $dir/count_methods.csv
+    python3 $1/methods.py $dir $dir/methods.csv
 done
 
-python3 $1/combine_count_methods.py $2 $2/count_methods.csv
+python3 $1/combine_methods.py $2 $2/../methods.csv
