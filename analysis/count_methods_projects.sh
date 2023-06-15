@@ -7,7 +7,7 @@ if [ "$#" -ne 2 ]; then
 fi
 
 # Loop over each sub folder in projects folder.
-for dir in $2/reactive/*; do
+for dir in $2/*; do
     echo $dir
     python3 $1/count_methods.py $dir $dir/count_methods.csv
 done
