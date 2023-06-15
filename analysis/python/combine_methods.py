@@ -12,7 +12,7 @@ def get_files(root):
 
     for subdir, _, files in os.walk(root):
         for file in files:
-            if file.endswith("count_methods.csv"):
+            if file.endswith("methods.csv"):
                 filepaths.append(os.path.join(subdir, file))
 
     return filepaths

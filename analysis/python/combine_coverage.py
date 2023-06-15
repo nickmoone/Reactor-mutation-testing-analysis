@@ -11,7 +11,7 @@ def get_files(root):
 
     for subdir, _, files in os.walk(root):
         for file in files:
-            if file.endswith("compare_coverage.csv"):
+            if file.endswith("coverage.csv"):
                 filepaths.append((subdir.split("/")[-1], os.path.join(subdir, file)))
 
     return filepaths
